@@ -1,0 +1,16 @@
+[package]
+name = "tmp_timestamp"
+version = "0.0.0"
+authors = ["Fuel Labs <contact@fuel.sh>"]
+edition = "2021"
+license = "Apache-2.0"
+
+[dependencies]
+fuels = { version = "0.36.0", features = ["fuel-core-lib"] }
+tokio = { version = "1.21.0", features = ["rt", "macros"] }
+chrono = "0.4.23"
+
+[[test]]
+harness = true
+name = "tests"
+path = "tests/harness.rs"
